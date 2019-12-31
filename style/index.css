@@ -1,0 +1,46 @@
+body {
+    background-image: url(../img/logo.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo img {
+    padding: 80px;
+}
+
+.btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn ul li {
+    display: inline-block;
+}
+
+.btn ul li a {
+    color: aliceblue;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    /* for delay  */
+    transition: 0.6s ease;
+}
+
+.btn ul li a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    .btn ul li {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+}
